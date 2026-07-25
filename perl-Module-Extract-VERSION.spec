@@ -1,15 +1,15 @@
 %define upstream_name    Module-Extract-VERSION
-%define upstream_version 1.01
+%define upstream_version 1.121
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Extract a module version without running code
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Module/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/briandfoy/module-extract-version
+Source0:	https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Module-Extract-VERSION-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
