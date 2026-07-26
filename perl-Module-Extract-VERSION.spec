@@ -1,15 +1,13 @@
 %define upstream_name    Module-Extract-VERSION
-%define upstream_version 1.121
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.121
+Release:	2
 
 Summary:	Extract a module version without running code
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/briandfoy/module-extract-version
-Source0:	https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Module-Extract-VERSION-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Module-Extract-VERSION-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -28,7 +26,7 @@ Class methods
       '$VERSION' statement, extracts it, evals it, and returns the result.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
