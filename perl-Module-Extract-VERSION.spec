@@ -1,13 +1,14 @@
 %define upstream_name    Module-Extract-VERSION
+%define upstream_version 1.121
 Name:		perl-%{upstream_name}
 Version:	1.121
-Release:	2
+Release:	1
 
 Summary:	Extract a module version without running code
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/briandfoy/module-extract-version
-Source0:	https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Module-Extract-VERSION-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Module-Extract-VERSION-1.121.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -43,19 +44,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
-%changelog
-* Thu Apr 28 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.10.0-1mdv2011.0
-+ Revision: 659938
-- update to new version 1.01
-
-* Mon Apr 18 2011 Funda Wang <fwang@mandriva.org> 0.130.0-2
-+ Revision: 655052
-- rebuild for updated spec-helper
-
-* Wed Aug 12 2009 Jérôme Quelin <jquelin@mandriva.org> 0.130.0-1mdv2011.0
-+ Revision: 415565
-- import perl-Module-Extract-VERSION
-
-
-* Wed Aug 12 2009 cpan2dist 0.13-1mdv
-- initial mdv release, generated with cpan2dist
