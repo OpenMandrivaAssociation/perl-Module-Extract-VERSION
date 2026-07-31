@@ -2,7 +2,7 @@
 %define upstream_version 1.121
 Name:		perl-%{upstream_name}
 Version:	1.121
-Release:	21
+Release:	22
 
 Summary:	Extract a module version without running code
 License:	GPL+ or Artistic
