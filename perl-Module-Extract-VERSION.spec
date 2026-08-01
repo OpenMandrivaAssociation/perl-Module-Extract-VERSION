@@ -2,7 +2,7 @@
 %define upstream_version 1.121
 Name:		perl-%{upstream_name}
 Version:	1.121
-Release:	47
+Release:	48
 
 Summary:	Extract a module version without running code
 License:	GPL+ or Artistic
@@ -44,7 +44,7 @@ make test || :
 %makeinstall_std
 
 %files
-%doc README* Changes* LICENSE* COPYING* META.yml
+%doc README* Changes* LICENSE* META.yml
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
